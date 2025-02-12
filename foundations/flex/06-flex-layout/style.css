@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-* {border: 1px solid black}
-
 body {
   height: 100vh;
   margin: 0;
@@ -29,27 +27,36 @@ ul {
 }
 
 .header {
+  padding: 10px;
   justify-content: space-between;
 }
 
 .content {
-  align-self: center;
+  align-self: center;/*for "content" container*/
+  align-items: center; /*for elements inside "content" container*/
   flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
 .footer {
+  padding: 10px;
   justify-content: space-between;
-  background-color: aliceblue;
+  background-color: #eeeeee;
 }
 
 .left-links {
-  padding: 5px;
   gap: 20px;
 }
 
 .right-links {
-  padding: 5px;
   gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
 }
 
 img {
@@ -61,6 +68,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 5px;
 }
 
 input {
